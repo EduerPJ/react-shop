@@ -84,3 +84,9 @@ Agregar en package.json config para producción
 # Correr app con
     npm run start
 
+# CSS - SASS
+    npm i mini-css-extract-plugin css-loader style-loader sass sass-loader -D
+
+Configurar webpack.config.js
+Crear archivo scss
+Importar el archivo a App.jsx

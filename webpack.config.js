@@ -1,5 +1,7 @@
 const path = require('path') // donde estamos usando este proyecto
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const loader = require('html-loader')
 
 module.exports = {
   mode: 'development',
@@ -27,6 +29,14 @@ module.exports = {
             loader: 'html-loader',
           }
         ]
+      },
+      {
+        test: /\.s[ac]ss$/i, // Css o Sacss
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+        ],
       }
     ]
   },
@@ -34,7 +44,17 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './public/index.html', // leera la template
       filename: './index.html', // compilara la template
-    })
-  ]
+    }),
+    new MiniCssExtractPlugin({ // compilar css
+      filename: '[name].css',
+    }),
+  ],
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
+    compress: true,
+    port: 3010,
+  },
 }
 
