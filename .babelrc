@@ -1,0 +1,6 @@
+{
+  "presets": [
+    "@babel/preset-ent",
+    "@babel/preset-react"
+  ]
+}

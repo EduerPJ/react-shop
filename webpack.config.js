@@ -1,36 +1,3 @@
-# Initial setup
-1. git init
-2. npm init
-3. Install React: npm install react@17 react-dom@17 --save
-
-# Add folders
-1. src
-    1. index.js
-    2. Add a folder: components > App.jsx
-2. public
-    1. index.html
-
-# Importar react en App.jsx y crear un staly component
-
-# Agregamos babel, webpack, html
-```npm
-npm install @babel/core @babel/preset-env @babel/preset-react
-npm install webpack webpack-cli webpack-dev-server
-npm install babel-loader html-loader html-webpack-plugin
-```
-
-# .babelrc
-```babel
-{
-  "presets": [
-    "@babel/preset-ent",
-    "@babel/preset-react"
-  ]
-}
-```
-
-# webpack.config.js personalizar proyecto
-```javascript
 const path = require('path') // donde estamos usando este proyecto
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
@@ -70,6 +37,3 @@ module.exports = {
   ]
 }
 
-```
-
-#
