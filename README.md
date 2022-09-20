@@ -72,4 +72,15 @@ module.exports = {
 
 ```
 
-#
+# Add a packege.json
+Coniguración para iniciar el server local
+
+    "start": "webpack serve --open"
+
+# Prepararlo para producción
+Agregar en package.json config para producción
+
+    "build": "webpack --mode production"
+# Correr app con
+    npm run start
+

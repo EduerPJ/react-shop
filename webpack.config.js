@@ -2,6 +2,7 @@ const path = require('path') // donde estamos usando este proyecto
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
+  mode: 'development',
   entry: './src/index.js', // punto de entrada de la app
   output: { // La salida del proyecto compilado
     path: path.resolve(__dirname, 'dist'), // ubicacion actual, crear folder
