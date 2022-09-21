@@ -1,7 +1,6 @@
 const path = require('path') // donde estamos usando este proyecto
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const loader = require('html-loader')
 
 module.exports = {
   mode: 'development',
@@ -31,7 +30,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.s[ac]ss$/i, // Css o Sacss
+        test: /\.(css|scss)$/, // Css o Sacss
         use: [
           'style-loader',
           'css-loader',
