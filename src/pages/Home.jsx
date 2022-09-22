@@ -1,11 +1,9 @@
 import React from "react"
+import Header from '../components/Header'
 
 const Home = () => {
   return (
-    <div>
-      <h1>React Shop Demo</h1>
-      <p>App Demo</p>
-    </div>
+    <Header />
   )
 }
 
