@@ -8,6 +8,7 @@ module.exports = {
   output: { // La salida del proyecto compilado
     path: path.resolve(__dirname, 'dist'), // ubicacion actual, crear folder
     filename: 'bundle.js', // nombre para el empaquetado - bundle
+    publicPath: '/' // raiz del proyecto
   },
   resolve: { // Extensiones con las que voy a trabajar en este proyecto
     extensions: ['.js', '.jsx'],
@@ -49,11 +50,14 @@ module.exports = {
     }),
   ],
   devServer: {
+    historyApiFallback: true,
+  }
+  /* devServer: {
     static: {
       directory: path.join(__dirname, 'dist'),
     },
     compress: true,
     port: 3010,
-  },
+  }, */
 }
 

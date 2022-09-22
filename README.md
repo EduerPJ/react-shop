@@ -90,3 +90,7 @@ Agregar en package.json config para producción
 Configurar webpack.config.js
 Crear archivo scss
 Importar el archivo a App.jsx
+
+# Configurar rutas
+cambiar en package.json "private": true, delete index.html
+
