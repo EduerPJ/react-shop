@@ -13,6 +13,7 @@ import SignOff from "../containers/SignOff";
 import Category from "../containers/Category";
 import Order from "../containers/Order";
 import Orders from "../containers/Orders";
+import Car from "../containers/Car";
 import "../styles/global.css";
 
 const App = () => {
@@ -29,8 +30,9 @@ const App = () => {
           <Route path="/product" element={<Product />} />
           <Route path="/sign-off" element={<SignOff />} />
           <Route path="/categories" element={<Category />} />
-          <Route path="/car" element={<Order />} />
+          <Route path="/order" element={<Order />} />
           <Route path="/orders" element={<Orders />} />
+          <Route path="/car" element={<Orders />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
