@@ -14,8 +14,8 @@ const Login = () => {
           <input type="submit" defaultValue="Log in" className="primary-button login-button" />
           <a href="/recovery-password">Forgot my password</a>
         </form>
-        <button className="secondary-button signup-button">
-          <a className='enlace' href="/sign-up">Sign up</a>
+        <button className="secondary-button Register-button">
+          <a className='enlace' href="/register">Sign up</a>
         </button>
       </div>
     </div>

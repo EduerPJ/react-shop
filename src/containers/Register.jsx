@@ -1,7 +1,7 @@
 import React from 'react'
-import '../styles/Signup.scss'
+import '../styles/Register.scss'
 
-const Signup = () => {
+const Register = () => {
   return (
     <div className="login">
       <div className="form-container">
@@ -22,4 +22,4 @@ const Signup = () => {
   )
 }
 
-export default Signup
+export default Register
